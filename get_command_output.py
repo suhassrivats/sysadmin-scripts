@@ -20,7 +20,6 @@ with open('inactive_hosts_intel', 'r') as hosts:
     for host in hosts:
         # Run ypcat command on a server
         cmd = "ypcat hosts |grep %s" % str(host).strip('\n')
-        # output = subprocess.getoutput(cmd)
         output = subprocess.getoutput(cmd)
         if output:
             print(host.strip('\n'))
