@@ -3,7 +3,7 @@
 # server
 ##################################################
 # Author: {Suhas Srivats Subburathinam}
-# Copyright: Copyright {2018}, {Project: Get username from a password file}
+# Copyright: Copyright {2018}
 # Credits: [{credit_list}]
 # License: {MIT}
 # Version: {mayor}.{minor}.{rel}
