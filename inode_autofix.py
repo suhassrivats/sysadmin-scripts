@@ -1,7 +1,7 @@
 ##################################################
-# This script will check within a NetApp storage cluster, if an indoe
+# This script will check a volume and its consituents, if an indoe
 # used-files is greater than a threshold value, then it will auto-grow total
-# inodes in a volume - NetApp
+# inodes in a volume - NetApp Storage
 ##################################################
 # Author: {Suhas Srivats Subburathinam}
 # Copyright: Copyright {2018}
