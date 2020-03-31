@@ -7,7 +7,7 @@
 # Credits: [{credit_list}]
 # License: {MIT}
 # Version: {mayor}.{minor}.{rel}
-# Mmaintainer: {suhas srivats}
+# Maintainer: {suhas srivats}
 # Email: {contact_email}
 # Status: {dev_status}
 # Example: python3 flavor_aggregate_match.py
@@ -36,7 +36,7 @@ def format_flavor_data(flavor_data):
         flavor_prop = [i.split(':')[1]
                        for i in flavor_data[i]['Properties'].split(',')]
 
-        # Delete properties key-value pair and append the formatted one
+        # Delete properties (key-value pair) and append the formatted one
         del flavor_data[i]['Properties']
 
         for fp in flavor_prop:
@@ -61,10 +61,10 @@ def compare_two_dicts(flavor_dict_prop, aggregate_dict_prop):
     flavor_dict_set = set(flavor_dict_prop)
     aggregate_dict_set = set(aggregate_dict_prop)
 
-    # Get the common properties of both dictionary
+    # Get the common properties of both dictionaries
     common_props = flavor_dict_set.intersection(aggregate_dict_set)
 
-    # Make a dictionary with these common properties
+    # Make respective dictionaries with these common properties
     for prop in common_props:
         flavor_dict_common[prop] = flavor_dict_prop[prop]
         aggregate_dict_common[prop] = aggregate_dict_prop[prop]
@@ -88,7 +88,7 @@ def main():
         # Write output to a file in JSON format
         write_to_file(output, command)
 
-    # Get flavor and aggregate json data in dictionary format
+    # Get flavor and aggregate JSON data in dictionary format
     flavor_data = format_flavor_data(json_to_dict('flavor.json'))
     aggregate_data = json_to_dict('aggregate.json')
 
