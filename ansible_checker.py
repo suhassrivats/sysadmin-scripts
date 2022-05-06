@@ -10,7 +10,7 @@
 # License: {MIT}
 # Version: {major}.{minor}.{rel}
 # Maintainer: {Suhas Srivats}
-# Email: {subburat@synopsys.com}
+# Email: {xxx@xxx.com}
 # Status: {dev}
 # Example: python3 ansible_checker.py
 # Shebang: #!/depot/python/bin/python
